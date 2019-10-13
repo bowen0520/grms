@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://192.168.112.120:9000</value>
+	</property>
+	<!-- 新增加的配置 -->
+	<property>
+		<name>hadoop.proxyuser.when.hosts</name>
+		<value>*</value>
+	</property>
+	<property>
+		<name>hadoop.proxyuser.when.groups</name>
+		<value>*</value>
+	</property>
+	<property>
+		<name>hadoop.http.staticuser.user</name>
+		<value>when</value>
+	</property>
+</configuration>

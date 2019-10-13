@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<property>
+		<name>dfs.nameservices</name>
+		<value>192.168.112.120-cluster</value>
+	</property>
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+	</property>
+	<property>
+		<name>dfs.blocksize</name>
+		<value>32M</value>
+	</property>
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>file:///bigdata/hadoop/data/nn</value>
+	</property>
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:///bigdata/hadoop/data/dn</value>
+	</property>
+	<property>
+		<name>dfs.namenode.checkpoint.dir</name>
+		<value>file:///bigdata/hadoop/data/snn</value>
+	</property>
+	<property>
+		<name>dfs.namenode.checkpoint.edits.dir</name>
+		<value>file:///bigdata/hadoop/data/snn</value>
+	</property>
+	<!--  新增的配置   -->
+	<property>
+		<name>dfs.web.ugi</name>
+		<value>when,when</value>
+	</property>
+	<property>
+		<name>fs.permissions.umask-mode</name>
+		<value>0000</value>
+	</property>
+	<property>
+		<name>dfs.permissions.enabled</name>
+		<value>false</value>
+	</property>
+	<property>
+		<name>dfs.permissions.superusergroup</name>
+		<value>when</value>
+	</property>
+	<property>
+		<name>dfs.namenode.safemode.threshold-pct</name>
+		<value>0f</value>
+	</property>
+    <property>
+        <name>dfs.namenode.name.dir.restore</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>dfs.cluster.administrators</name>
+        <value>*</value>
+    </property>
+</configuration>
